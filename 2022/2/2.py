@@ -38,7 +38,7 @@ for game in games:
             finalScore += rockPoints
 
     #draw me
-    if me is drawMe:
+    elif me is drawMe:
         finalScore += drawPoints
         if opponent is rockOpponent:
             finalScore += rockPoints
@@ -48,7 +48,7 @@ for game in games:
             finalScore += scissorsPoints
 
     #lose me
-    if me is loseMe:
+    elif me is loseMe:
         if opponent is rockOpponent:
             finalScore += scissorsPoints
         elif opponent is paperOpponent:
